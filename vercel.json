@@ -1,13 +1,10 @@
 {
     "version": 2,
     "builds": [
-      { "src": "dist/enterNow/**/*", "use": "@vercel/static" }
+      { "src": "dist/enterNow/**", "use": "@vercel/static" }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "dist/enterNow/index.html"
-      }
+      { "src": "/(.*)", "dest": "dist/enterNow/index.html" }
     ]
   }
   
