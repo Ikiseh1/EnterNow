@@ -1,11 +1,11 @@
 {
     "version": 2,
+    "public": "dist/enterNow/browser",
     "builds": [
-      { "src": "dist/enterNow/index.html", "use": "@vercel/static" },
-      { "src": "dist/enterNow/**", "use": "@vercel/static" }
+      { "src": "dist/enterNow/browser/**", "use": "@vercel/static" }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "dist/enterNow/index.html" }
+      { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
   
