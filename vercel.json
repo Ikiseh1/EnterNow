@@ -1,12 +1,7 @@
 {
     "version": 2,
-    "builds": [
-      { "src": "dist/enterNow/browser/**", "use": "@vercel/static" }
-    ],
     "routes": [
-      { "handle": "filesystem" },
-      { "src": "/.*", "dest": "/index.html" }
-    ],
-    "outputDirectory": "dist/enterNow/browser"
+      { "src": "/(.*)", "dest": "/index.html" }
+    ]
   }
   
